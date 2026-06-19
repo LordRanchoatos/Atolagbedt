@@ -41,7 +41,7 @@ Everything below is intentionally a placeholder, flagged in `src/lib/data.ts`:
    photo (e.g. `profile.jpg`), then update `avatarSrc` in `lib/data.ts`.
 2. **Project links** — `Yarnz`, `Bankless DAO Website`, `Madhatter`,
    `Deeltix`, `Helpers`, and the Sooseed/Jobgap AI company links are marked
-   `href: "PLACEHOLDER"`. Replace each with a real URL and the "(link soon)"
+   `href: "https://sooseed.com/"`. Replace each with a real URL and the "(link soon)"
    tag will automatically disappear (see `MaybeLink.tsx`).
 3. **Writings** — the two essay titles in `writings` currently render a
    "coming soon" stub page. Either:

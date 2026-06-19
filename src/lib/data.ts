@@ -27,14 +27,15 @@ export type Highlight = {
 export const highlights: Highlight[] = [
   {
     text: "Architected backend systems for Sooseed — ₦100M+ processed, 15,000+ users",
-    href: "PLACEHOLDER", // no live URL supplied yet
+    href: "https://sooseed.com/", // no live URL supplied yet
   },
   {
     text: "Engineered backend services at MyStash, a wealth-management platform serving 50,000+ users",
+    href: "https://mystashapp.com/", // no live URL supplied yet
   },
   {
     text: "Co-built Jobgap AI — an AI résumé and job-matching platform, 5,000+ users, 40% paid conversion",
-    href: "PLACEHOLDER",
+    href: "https://jobgap.xyz/", // no live URL supplied yet
   },
   {
     text: "Author & maintainer of flex-lorem, a Lorem Ipsum generator for Node.js — 1,000+ downloads",
@@ -61,7 +62,7 @@ export type ExperienceEntry = {
 export const experience: ExperienceEntry[] = [
   {
     company: "Sooseed",
-    companyHref: "PLACEHOLDER",
+    companyHref: "https://sooseed.com/",
     role: "Backend Engineer",
     location: "Lagos",
     start: "Aug 2024",
@@ -76,7 +77,7 @@ export const experience: ExperienceEntry[] = [
   },
   {
     company: "Jobgap AI",
-    companyHref: "PLACEHOLDER",
+    companyHref: "https://jobgap.xyz/",
     role: "FullStack Engineer",
     location: "Remote — London",
     start: "Jun 2022",
@@ -92,7 +93,7 @@ export const experience: ExperienceEntry[] = [
   },
   {
     company: "MyStash",
-    companyHref: "PLACEHOLDER",
+    companyHref: "https://mystashapp.com/",
     role: "Software Engineering Intern",
     location: "Lagos",
     start: "Oct 2021",
