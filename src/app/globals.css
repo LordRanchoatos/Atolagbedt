@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #ffffff;
+  --fg: #18181b;
+  --muted: #71717a;
+  --border: #e4e4e7;
+  --link: #3a5f8a;
+  --link-hover: #18181b;
+}
+
+.dark {
+  --bg: #0a0a0b;
+  --fg: #ededee;
+  --muted: #8b8b92;
+  --border: #262629;
+  --link: #8eb4dd;
+  --link-hover: #ededee;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-link: var(--link);
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.link {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-color: var(--border);
+  text-underline-offset: 2px;
+  transition: color 0.12s ease, text-decoration-color 0.12s ease;
+}
+
+.link:hover {
+  color: var(--link-hover);
+  text-decoration-color: currentColor;
+}
+
+.text-muted {
+  color: var(--muted);
+}
+
+.hairline {
+  border-top: 1px solid var(--border);
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* visible keyboard focus, no outline removal */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
